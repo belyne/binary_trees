@@ -19,13 +19,14 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 
 	/* Assign data to this node */
 	new_node->n = value;
+	
+	/* Assign parent to new node */
+	new_node->parent = parent;
 
 	/* Initialize left and right children as NULL */
 	new_node->left = NULL;
 	new_node->right = NULL;
 
-	/* Assign parent to new node */
-	new_node->parent = parent;
 
 	return (new_node);
 }
